@@ -1,0 +1,9 @@
+- op: replace
+  path: /spec/rbac/policy
+  value: |-
+    g, system:cluster-admins, role:admin
+    g, cluster-admins, role:admin
+    g, DS\GLO-OKTA-APP-REDHAT-OPENSHIFT-ZPL13-913438-Users, role:admin
+- op: replace
+  path: /spec/rbac/defaultPolicy
+  value: read-only
